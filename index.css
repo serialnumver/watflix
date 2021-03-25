@@ -1,0 +1,87 @@
+body {
+  background-image:url('https://media0.giphy.com/media/lCkumTggV53xe/source.gif');
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+  z-index: 1;
+}
+
+h1{
+  color:#FFFFFF;
+  font-size: 110px;
+  font-family: 'Architects Daughter', cursive;
+  text-shadow: 1px 1px 2px #EAB458, 0 0 1em #FBA104, 0 0 0.2em yellow;
+}
+
+.netflix {
+  position: absolute;
+  top: 45%;
+  left: 29%;
+  width: 15%;
+  height: 41%;
+  z-index: 2;
+  opacity: 0%;
+  cursor: pointer;
+}
+
+.watcha {
+  position: absolute;
+  top: 45%;
+  left: 46%;
+  width: 15%;
+  height: 41%;
+  z-index: 2;
+  opacity: 0%;
+  cursor: pointer;
+}
+
+.netflix, .watcha {
+  /* for IE 8 & 9 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* works in IE 8 & 9 too, but also 5, 6, 7 */
+  filter: alpha(opacity=0);
+  /* Modern Browsers */
+  opacity: 0;
+}

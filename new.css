@@ -1,0 +1,61 @@
+    .swiper-container {
+        width: 100%;
+        height: 275px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        width: 250px;
+    }
+  .swiper-slide img{
+  width: 100%
+  }
+h1, h3, p{
+  font-family: 'Jua', sans-serif;
+  font-weight: normal;
+}
+.lists img{
+  position: absolute;
+  left: 120px;
+  width: 15%;
+  height: auto;
+  display: inline-block;
+}
+.lists h1{
+  position: absolute;
+  left: 480px;
+  font-size: 35px;
+}
+.lists p{
+  position: absolute;
+  left: 480px;
+  font-size: 25px;
+}
+@media only screen and (max-width: 720px){
+  .swiper-container{
+  display: none;
+  }
+  .lists{
+  visibility: visible;
+  }
+  h3{
+  font-size: 20px;
+  font-weight: normal;
+  }
+  .lists img{
+  position: relative;
+  left:3%;
+  width:40%;
+  } 
+  .lists p{
+  position: absolute;
+  left: 45%;
+  font-size: 13px;
+  }
+  .lists h1{
+  position: absolute;
+  left: 45%;
+  font-size: 20px;
+  }
+}

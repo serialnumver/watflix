@@ -1,0 +1,80 @@
+body {
+  background-image:url('https://media0.giphy.com/media/lCkumTggV53xe/source.gif');
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 105%;
+  height: auto;
+  z-index: 1;
+}
+
+h1{
+  color:#FFFFFF;
+  font-size: 60px;
+  font-family: 'Architects Daughter', cursive;
+  text-shadow: 1px 1px 2px #EAB458, 0 0 1em #FBA104, 0 0 0.2em yellow;
+}
+.netflix {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  width: 15%;
+  height: 25%;
+  opacity: 0%;
+  z-index: 2;
+  cursor: pointer;
+}
+.watcha {
+  position: absolute;
+  top: 20%;
+  left: 48%;
+  width: 15%;
+  height: 25%;
+  opacity: 0%;
+  z-index: 2;
+  cursor: pointer;
+}
+h4, p{
+  font-family: 'Jua', sans-serif;
+  font-weight: normal;
+}

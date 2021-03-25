@@ -1,0 +1,139 @@
+body {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+h4, p{
+  font-family: 'Jua', sans-serif;
+  font-weight: normal;
+}
+.head img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: auto;
+}
+.btt {
+  background-color: #C83638;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Jua', sans-serif;
+  font-size: 1em;
+  font-size: 30px;
+  line-height: 1em;
+  margin: 50px 40px;
+  outline: none;
+  padding: 27px 40px 27px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btt:before,
+.btt:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.btt:before {
+  border-color: #C83638;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -7px;
+  top: -7px;
+}
+.btt:after {
+  border-bottom-width: 2px;
+  border-color: #C83638;
+  border-left-width: 2px;
+  bottom: -7px;
+  left: -7px;
+}
+.btt:hover,
+.btt.hover {
+  background-color: #C83638;
+}
+.btt:hover:before,
+.btt.hover:before,
+.btt:hover:after,
+.btt.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width:720px){
+  .head img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+  }
+  .btt {
+  background-color: #C83638;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Jua', sans-serif;
+  font-size: 1em;
+  font-size: 20px;
+  line-height: 1em;
+  margin: 30px 80px;
+  outline: none;
+  padding: 16px 40px 16px;
+  position: relative;
+  text-transform: uppercase;
+}
+h4{
+  font-size: 18px;
+  font-family: 'Jua', sans-serif;
+  font-weight: normal;
+}
+p{
+  font-size: 8px;
+  font-family: 'Jua', sans-serif;
+  font-weight: normal;
+}
+}

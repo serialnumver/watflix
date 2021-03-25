@@ -1,0 +1,44 @@
+.swiper-container {
+    width: 100%;
+    height: 270px;
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 250px;
+}
+.swiper-slide img{
+    width: 100%
+}
+h4, p, table{
+    font-family: 'Jua', sans-serif;
+    font-weight: normal;
+}
+#table1, #table2, #table3{
+    display: none;
+}
+
+@media only screen and (max-width: 720px){
+    .swiper-container{
+        display: none;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: normal;
+    }
+    #table1, #table2, #table3{
+        display: block;
+    }
+    p{
+        display: none;
+    }
+    .head p{
+        display: block;
+        font-size: 13px;
+    }
+    td{
+        font-size: 15px;
+    }
+}
